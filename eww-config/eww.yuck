@@ -1,0 +1,14 @@
+(defwidget cat_widget []
+  (box
+    :class "cat-box"
+    :orientation "vertical"
+    :spacing 10
+    (image
+      :path "/home/knaifu/.config/eww/cat.jpg"
+      :width 300
+      :height 300)))
+
+(defwindow cat_window
+  :geometry (geometry :x 1450 :y 220 :width 400 :height 400)
+  :monitor 0
+  (cat_widget))
